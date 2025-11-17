@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>イベント送信が完了しました！</h1>
+
+  <p><strong>タイトル：</strong> <%= @event.title %></p>
+
+  <p><strong>本文：</strong></p>
+  <p><%= simple_format(@event.content) %></p>
+
+  <%= link_to "グループに戻る", group_path(@group), class: "btn btn-primary mt-3" %>
+</div>
